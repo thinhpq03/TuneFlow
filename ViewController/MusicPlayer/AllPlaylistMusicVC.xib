@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllPlaylistMusicVC" customModule="TuneFlow" customModuleProvider="target">
+            <connections>
+                <outlet property="clv" destination="uye-li-q6W" id="mer-op-twL"/>
+                <outlet property="titleLb" destination="eEd-3Z-tct" id="0qt-Dy-WHj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="fPT-AG-o1m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uye-li-q6W">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IGS-bA-mSx">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-Nw-UmL">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-3Z-tct">
+                            <rect key="frame" x="158" y="14.666666666666671" width="77" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="FFFFFF"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cks-He-CST">
+                            <rect key="frame" x="323" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="NUn-Xu-eHE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="tintColor" name="FFFFFF"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="xmark.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="closeTap:" destination="-1" eventType="touchUpInside" id="JEG-4O-iBZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cks-He-CST" firstAttribute="top" secondItem="OHM-Nw-UmL" secondAttribute="top" id="G0P-Pj-fUl"/>
+                        <constraint firstItem="eEd-3Z-tct" firstAttribute="centerY" secondItem="OHM-Nw-UmL" secondAttribute="centerY" id="PM0-6E-UOG"/>
+                        <constraint firstAttribute="trailing" secondItem="cks-He-CST" secondAttribute="trailing" constant="20" id="YKf-Wt-DLX"/>
+                        <constraint firstItem="eEd-3Z-tct" firstAttribute="centerX" secondItem="OHM-Nw-UmL" secondAttribute="centerX" id="d9f-GE-3ai"/>
+                        <constraint firstAttribute="height" constant="50" id="nHZ-Mb-MKy"/>
+                        <constraint firstAttribute="bottom" secondItem="cks-He-CST" secondAttribute="bottom" id="xtQ-pS-YBf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="000000"/>
+            <constraints>
+                <constraint firstItem="uye-li-q6W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nhn-w7-CEM"/>
+                <constraint firstItem="OHM-Nw-UmL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ovs-1O-qX1"/>
+                <constraint firstItem="uye-li-q6W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="QH2-Co-gaH"/>
+                <constraint firstItem="OHM-Nw-UmL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RNR-T0-o65"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OHM-Nw-UmL" secondAttribute="trailing" id="VQy-nw-J95"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uye-li-q6W" secondAttribute="bottom" id="r6L-eh-IkV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uye-li-q6W" secondAttribute="trailing" id="uGT-UM-Ed9"/>
+            </constraints>
+            <point key="canvasLocation" x="101.5267175572519" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

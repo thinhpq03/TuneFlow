@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImportVC" customModule="TuneFlow" customModuleProvider="target">
+            <connections>
+                <outlet property="naviTitle" destination="aQ1-P4-XvT" id="mPT-jg-XLj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="btns" destination="Xpo-h2-D0f" collectionClass="NSMutableArray" id="7Ih-Xa-gFy"/>
+                <outletCollection property="btns" destination="kZK-7b-Ncq" collectionClass="NSMutableArray" id="Yqh-Wm-q38"/>
+                <outletCollection property="btns" destination="QF9-AZ-XO3" collectionClass="NSMutableArray" id="Et7-dj-Hww"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-IT-NlW">
+                    <rect key="frame" x="0.0" y="62" width="440" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-P4-XvT">
+                            <rect key="frame" x="180" y="9.9999999999999982" width="80.333333333333314" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="11B8ED"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5w-21-dMn">
+                            <rect key="frame" x="20" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="I4L-Zg-ZNM"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="left-arrow (3) 1"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="lRf-ay-uqi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NLy-q3-SA9"/>
+                        <constraint firstItem="aQ1-P4-XvT" firstAttribute="centerY" secondItem="eyi-IT-NlW" secondAttribute="centerY" id="TXP-qj-Cdo"/>
+                        <constraint firstItem="m5w-21-dMn" firstAttribute="leading" secondItem="eyi-IT-NlW" secondAttribute="leading" constant="20" id="Yp7-aX-rf1"/>
+                        <constraint firstItem="m5w-21-dMn" firstAttribute="top" secondItem="eyi-IT-NlW" secondAttribute="top" id="d3f-3z-gm1"/>
+                        <constraint firstItem="aQ1-P4-XvT" firstAttribute="centerX" secondItem="eyi-IT-NlW" secondAttribute="centerX" id="jxa-Y7-vgK"/>
+                        <constraint firstAttribute="bottom" secondItem="m5w-21-dMn" secondAttribute="bottom" id="pMU-Z7-3ME"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Bpt-f4-GsL">
+                    <rect key="frame" x="105" y="152" width="230" height="320"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpo-h2-D0f">
+                            <rect key="frame" x="0.0" y="0.0" width="230" height="83.333333333333329"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="  Link" image="link (5) 1">
+                                <color key="titleColor" name="000000"/>
+                            </state>
+                            <connections>
+                                <action selector="link:" destination="-1" eventType="touchUpInside" id="pdI-on-EHD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZK-7b-Ncq">
+                            <rect key="frame" x="0.0" y="118.33333333333331" width="230" height="83.333333333333314"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="  Apple Music" image="music-note (3) 2">
+                                <color key="titleColor" name="000000"/>
+                            </state>
+                            <connections>
+                                <action selector="appleMusic:" destination="-1" eventType="touchUpInside" id="eMI-vl-0AT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QF9-AZ-XO3">
+                            <rect key="frame" x="0.0" y="236.66666666666671" width="230" height="83.333333333333343"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="  Wifi Tranfer" image="computer 1">
+                                <color key="titleColor" name="000000"/>
+                            </state>
+                            <connections>
+                                <action selector="wifiTranfer:" destination="-1" eventType="touchUpInside" id="n5D-JJ-7Rr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Bpt-f4-GsL" secondAttribute="height" multiplier="23:32" id="ScK-cd-dMi"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="000000"/>
+            <constraints>
+                <constraint firstItem="Bpt-f4-GsL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1d1-UT-1yv"/>
+                <constraint firstItem="Bpt-f4-GsL" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.334728" id="NCi-pC-bOm"/>
+                <constraint firstItem="eyi-IT-NlW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dgW-Y2-bPS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eyi-IT-NlW" secondAttribute="trailing" id="see-Vx-XX8"/>
+                <constraint firstItem="eyi-IT-NlW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vZQ-xV-59H"/>
+                <constraint firstItem="Bpt-f4-GsL" firstAttribute="top" secondItem="eyi-IT-NlW" secondAttribute="bottom" constant="50" id="w5d-Yd-Zl9"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="computer 1" width="60.333332061767578" height="60.333332061767578"/>
+        <image name="left-arrow (3) 1" width="24" height="24"/>
+        <image name="link (5) 1" width="60.333332061767578" height="60.333332061767578"/>
+        <image name="music-note (3) 2" width="52" height="51.666667938232422"/>
+        <namedColor name="000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11B8ED">
+            <color red="0.066666666666666666" green="0.72156862745098038" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

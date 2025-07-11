@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentlyVC" customModule="TuneFlow" customModuleProvider="target">
+            <connections>
+                <outlet property="clv" destination="5iL-AQ-b7Q" id="xo7-7t-AgY"/>
+                <outlet property="lb" destination="QA1-TT-GjH" id="ilQ-V5-Lr0"/>
+                <outlet property="searchBg" destination="O75-S3-34J" id="UE2-dL-LIh"/>
+                <outlet property="searchTxt" destination="Mbc-Km-mEi" id="Gvc-nB-eI3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O75-S3-34J">
+                    <rect key="frame" x="30" y="59" width="333" height="35"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 1" translatesAutoresizingMaskIntoConstraints="NO" id="hoW-DB-Fwo">
+                            <rect key="frame" x="10" y="0.0" width="24" height="35"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-Km-mEi">
+                            <rect key="frame" x="44" y="0.0" width="279" height="35"/>
+                            <color key="textColor" name="FFFFFF"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="555555"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Mbc-Km-mEi" secondAttribute="bottom" id="6E9-qt-bSD"/>
+                        <constraint firstAttribute="trailing" secondItem="Mbc-Km-mEi" secondAttribute="trailing" constant="10" id="EG2-Yi-9ae"/>
+                        <constraint firstAttribute="bottom" secondItem="hoW-DB-Fwo" secondAttribute="bottom" id="JcE-W8-L7u"/>
+                        <constraint firstItem="Mbc-Km-mEi" firstAttribute="leading" secondItem="hoW-DB-Fwo" secondAttribute="trailing" constant="10" id="SXw-7b-iHF"/>
+                        <constraint firstItem="Mbc-Km-mEi" firstAttribute="top" secondItem="O75-S3-34J" secondAttribute="top" id="WWp-oD-Fge"/>
+                        <constraint firstItem="hoW-DB-Fwo" firstAttribute="leading" secondItem="O75-S3-34J" secondAttribute="leading" constant="10" id="daR-9v-vum"/>
+                        <constraint firstItem="hoW-DB-Fwo" firstAttribute="top" secondItem="O75-S3-34J" secondAttribute="top" id="pHg-dF-pl2"/>
+                        <constraint firstAttribute="height" constant="35" id="rAg-vi-Knm"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-TT-GjH">
+                    <rect key="frame" x="30" y="109" width="66" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="FFFFFF"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5iL-AQ-b7Q">
+                    <rect key="frame" x="0.0" y="140" width="393" height="712"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s2p-fs-nU6">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="000000"/>
+            <constraints>
+                <constraint firstItem="QA1-TT-GjH" firstAttribute="top" secondItem="O75-S3-34J" secondAttribute="bottom" constant="15" id="5WT-aP-Blu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O75-S3-34J" secondAttribute="trailing" constant="30" id="9Gb-da-Cke"/>
+                <constraint firstItem="QA1-TT-GjH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Rlo-Sf-Zgn"/>
+                <constraint firstItem="5iL-AQ-b7Q" firstAttribute="top" secondItem="QA1-TT-GjH" secondAttribute="bottom" constant="10" id="YB7-7M-R0i"/>
+                <constraint firstAttribute="bottom" secondItem="5iL-AQ-b7Q" secondAttribute="bottom" id="cRf-Xg-GJb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5iL-AQ-b7Q" secondAttribute="trailing" id="nqM-NU-d5I"/>
+                <constraint firstItem="5iL-AQ-b7Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tN9-gN-6ZV"/>
+                <constraint firstItem="O75-S3-34J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uSl-vV-XkE"/>
+                <constraint firstItem="O75-S3-34J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="vId-g7-mho"/>
+            </constraints>
+            <point key="canvasLocation" x="53" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Vector 1" width="23.666666030883789" height="24.333333969116211"/>
+        <namedColor name="000000">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="555555">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
